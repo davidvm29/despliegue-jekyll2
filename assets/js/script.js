@@ -158,6 +158,7 @@ function cargarMenu() {
   }
 }
 /* SEARCH */
+
 function buscarYRedirigir(idioma) {
   var searchTerm = document.getElementById('q').value;
   // Realizar la búsqueda con el término searchTerm
@@ -167,9 +168,9 @@ function buscarYRedirigir(idioma) {
   localStorage.setItem('searchResults', JSON.stringify(results));
   // Redireccionar a la página de búsqueda
   if(idioma==="es"){
-    window.location.href = "/search.html";
+    window.location.href = baseUrl + "/search.html";
   }else{
-    window.location.href = "/search_en.html";
+    window.location.href = baseUrl +"/search_en.html";
   }
 }
 
